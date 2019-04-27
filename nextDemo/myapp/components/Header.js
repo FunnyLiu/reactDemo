@@ -15,6 +15,9 @@ const Header = ()=>(
         <Link href="/hoc">
             <a style={linkStyle}>By Hoc</a>
         </Link>
+        <Link href="/style">
+            <a style={linkStyle}>Css in JS</a>
+        </Link>
     </div>
 )
 
