@@ -48,6 +48,8 @@ export const TodosProvider = props => {
   );
   const [todos] = contextValue;
 
+  //When using an imperative API, use useEffect.
+  //Triggers when the value of todos changes.
   React.useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
