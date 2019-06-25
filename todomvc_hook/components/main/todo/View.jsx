@@ -6,7 +6,9 @@ import {Destroy} from './Destroy.jsx'
 export const View=(props) =>{
 
 	const { id, completed, text, setEditing } = props;
-
+	/**
+	 * throw an event out to indicate editing status
+	 */
 	function onDoubleClick() {
 		setEditing(id);
 	}

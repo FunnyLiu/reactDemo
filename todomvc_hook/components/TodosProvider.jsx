@@ -7,7 +7,7 @@ import React, { useContext, useReducer } from "react";
  */
 const todosReducer = (todos, action) => {
   const { type, text, id, checked } = action;
-
+  //puer action in reducer
   switch (type) {
     case "add":
       return [

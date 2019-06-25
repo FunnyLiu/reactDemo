@@ -2,6 +2,9 @@ import React, { useContext, useState, useEffect } from "react";
 
 const FilterContext = React.createContext(null);
 
+/**
+ * custom hooks
+ */
 export const useFilter = () => {
   const contextValue = useContext(FilterContext);
   return contextValue;
@@ -12,6 +15,8 @@ export const FilterProvider = props => {
   const contextValue = useState("");
   const [filter, setFilter] = contextValue;
 
+  //some effect function such as addeventlistener and data fetch
+  //should be put in useEffect
   useEffect(() => {
     window.addEventListener(
       "hashchange",
