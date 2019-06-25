@@ -1,5 +1,10 @@
 import React, { useContext, useReducer } from "react";
 
+/**
+ * A reducer for todos, operate complex data
+ * @param {*} todos 
+ * @param {*} action 
+ */
 const todosReducer = (todos, action) => {
   const { type, text, id, checked } = action;
 
@@ -39,9 +44,13 @@ export const useTodos = () => {
   const contextValue = useContext(TodosContext);
   return contextValue;
 };
-
+/**
+ * use provider and reducer to manage store
+ * @param {} props 
+ */
 export const TodosProvider = props => {
   const { children } = props;
+  //use useReducer to operating complex data
   const contextValue = useReducer(
     todosReducer,
     JSON.parse(localStorage.getItem("todos")) || []

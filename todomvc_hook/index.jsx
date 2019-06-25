@@ -6,6 +6,7 @@ import Header from "./components/header/index.jsx";
 import Main from "./components/main/index.jsx";
 import { TodosProvider } from "./components/TodosProvider.jsx";
 import { FilterProvider } from "./components/FilterProvider.jsx";
+import Footer from "./components/footer/index.jsx";
 
 
 ReactDOM.render(
@@ -13,6 +14,7 @@ ReactDOM.render(
     <Header />
     <FilterProvider>
       <Main />
+      <Footer />
     </FilterProvider>
   </TodosProvider>,
   document.getElementById("app")
