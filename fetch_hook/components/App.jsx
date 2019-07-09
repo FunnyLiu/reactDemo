@@ -1,11 +1,3 @@
-
-# fetch_hook
-
-how to fetch data in React hooks:
-
-<img src="https://raw.githubusercontent.com/brizer/graph-bed/master/img/20190709175300.png"/>
-
-``` jsx
 import React, { useState, useEffect, Fragment, useReducer } from "react";
 import axios from "axios";
 // custom reducer
@@ -115,9 +107,3 @@ function App() {
 }
 
 export default App;
-
-```
-
-# todomvc_hook 
-
-A TodoMVC demo based on react-hooks and context api
