@@ -40,7 +40,7 @@ const WithMemo = function() {
           onChange={(event) => setValue(event.target.value)}
         />{" "}
       </div>
-      用能性化优来用般一
+      一般用来优化性能
     </div>
   );
 };

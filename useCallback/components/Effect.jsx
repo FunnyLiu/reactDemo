@@ -1,9 +1,9 @@
 import React, { useCallback, useState, useMemo } from "react";
 
 function Effect() {
-  //   return <Blub />;
+  return <Blub />;
   // return <Blub2 />;
-  return <Blub3 />;
+  // return <Blub3 />;
 }
 let num = 0;
 
@@ -82,6 +82,7 @@ function Blub3() {
 //   const bar = () => {};
 //   const baz = [3];
   // 通过这种方法解决引用类型的重新渲染问题
+  // useCallback(fn, deps) is equivalent to useMemo(() => fn, deps).
   const bar = useCallback(() => {}, [])
   const baz = useMemo(() => [3], [])
   return (
